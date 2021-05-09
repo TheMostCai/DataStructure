@@ -5,62 +5,79 @@
 
 using namespace std;
 
-//¶¨Òå¾²Ì¬·ÖÅäµÄË³Ğò±í½á¹¹
-typedef struct{
+//å®šä¹‰çº¿æ€§è¡¨
+typedef struct
+{
 	int data[MaxSize];
 	int length;
 }SqList;
 
-//³õÊ¼»¯Ë³Ğò±í
-void InitList(SqList &L){
-	for ( int i = 0; i < MaxSize; i++ ){
-		L.data[i] == 0;//ÎªË³Ğò±íÉèÖÃÄ¬ÈÏÖµ(¿ÉÒÔÊ¡ÂÔ)
+//åˆå§‹åŒ–çº¿æ€§è¡¨
+void InitList(SqList& L)
+{
+	for (int i = 0; i < MaxSize; i++)
+	{
+		L.data[i] == 0;//ä¸ºçº¿æ€§è¡¨è®¾ç½®é»˜è®¤å€¼
 	}
-	L.length = 0;//ÉèÖÃË³Ğò±íµÄ³¤¶ÈÎª0
+	L.length = 0;//è®¾ç½®çº¿æ€§è¡¨é•¿åº¦ä¸º0
 }
 
-//¶ÔË³Ğò±í½øĞĞ²åÈë²Ù×÷
-bool ListInsert(SqList &L, int i, int e){//ÔÚiµÄÎ»Ğò´¦²åÈëÔªËØe
-	if ( i<1 || i>L.length + 1 ){
+//çº¿æ€§è¡¨æ’å…¥å…ƒç´ 
+//åœ¨ä½åºä¸ºiçš„åœ°æ–¹æ’å…¥å…ƒç´ e
+bool ListInsert(SqList& L, int i, int e)
+{
+	if (i<1 || i>L.length + 1)
+	{
 		return false;
 	}
-	if ( L.length >= MaxSize ){
+	if (L.length >= MaxSize)
+	{
 		return false;
 	}
-	for ( int j = L.length; j >= i; j-- ){
+	for (int j = L.length; j >= i; j--)
+	{
 		L.data[j] = L.data[j - 1];
 	}
 	L.data[i - 1] = e;
-	L.length++;//¸üÕıË³Ğò±í³¤¶È
+	L.length++;//æ›´æ–°çº¿æ€§è¡¨é•¿åº¦
 	return true;
 }
 
-//É¾³ıË³Ğò±íÖĞÎ»ĞòÎªiµÄÔªËØ
-bool ListDelete(SqList &L, int i, int &e){//É¾³ıÎ»ĞòÎªiµÄÔªËØ, ½«±»É¾³ıÔªËØµÄÖµ¸³¸øe
-	if ( i < 1 || i>L.length ){//ÅĞ¶ÏiµÄºÏ·¨ĞÔ
+//çº¿æ€§è¡¨åˆ é™¤æ“ä½œ
+//åˆ é™¤ä½åºä¸ºiçš„å…ƒç´ ,å¹¶å°†è¢«åˆ é™¤çš„å€¼æ”¾åˆ°eä¸­
+bool ListDelete(SqList& L, int i, int& e)
+{
+	if (i < 1 || i>L.length)
+	{//åˆ¤æ–­åˆæ³•æ€§
 		return false;
 	}
 	e = L.data[i - 1];
-	for ( int j = i; j < L.length; j++ ){
+	for (int j = i; j < L.length; j++)
+	{
 		L.data[j - 1] = L.data[j];
 	}
 	L.length--;
 	return true;
 }
 
-//²éÕÒË³Ğò±íÖĞµÚÒ»¸öÖµÎªeµÄÔªËØ.
-int LocateElem(SqList L, int e){
-	for ( int i = 0; i < L.length; i++ )		{
-		if ( L.data[i] == e ){
+//æ‰¾åˆ°çº¿æ€§è¡¨ä¸­ç¬¬ä¸€ä¸ªå€¼ä¸ºeçš„å…ƒç´ 
+int LocateElem(SqList L, int e)
+{
+	for (int i = 0; i < L.length; i++)
+	{
+		if (L.data[i] == e)
+		{
 			return i + 1;
 		}
 	}
 	return 0;
 }
 
-//È¡Ë³Ğò±íÖĞÎ»ĞòÎªiµÄÔªËØ,²¢½«Æä·ÅÔÚeÖĞ
-bool GetElem(SqList L, int i,int &e){
-	if ( i<1||i>L.length )	{
+//æ‰¾åˆ°çº¿æ€§è¡¨ä¸­ä½åºä¸ºiçš„å…ƒç´ ,å°†å®ƒçš„å€¼æ”¾åˆ°eä¸­
+bool GetElem(SqList L, int i, int& e)
+{
+	if (i<1 || i>L.length)
+	{
 		return false;
 	}
 	e = L.data[i - 1];
