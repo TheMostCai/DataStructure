@@ -1,34 +1,31 @@
-#include <iostream>
 #include <stdlib.h>
+#include <iostream>
 
-#define InitSize 10//
+#define InitSize 10  //
 
 using namespace std;
 
-//¶¨Òå¶¯Ì¬·ÖÅäµÄË³Ğò±í
-typedef struct
-{
-	int* data;//¶¯Ì¬·ÖÅäÊı×éµÄÖ¸Õë
-	int MaxSize;//Ë³Ğò±íµÄ×î´óÈİÁ¿
-	int length;//Ë³Ğò±íµÄµ±Ç°³¤¶È
-}SqList;
+//å®šä¹‰åŠ¨æ€åˆ†é…çš„é¡ºåºè¡¨
+typedef struct {
+    int* data;    //åŠ¨æ€åˆ†é…æ•°ç»„çš„æŒ‡é’ˆ
+    int MaxSize;  //é¡ºåºè¡¨çš„æœ€å¤§å®¹é‡
+    int length;   //é¡ºåºè¡¨çš„å½“å‰é•¿åº¦
+} SqList;
 
-// ³õÊ¼»¯Ë³Ğò±í
-//void InitList(SqList &L){
-//	L.data = (int *)malloc(InitSize * sizeof(int));//ÉêÇëÒ»Æ¬Á¬ĞøµÄ´æ´¢¿Õ¼ä,º¯Êı¶¨ÒåÔÚstdlib.hÖĞ
-//	L.length = 0;
+// åˆå§‹åŒ–é¡ºåºè¡¨
+// void InitList(SqList &L){
+//	L.data = (int *)malloc(InitSize *
+// sizeof(int));//ç”³è¯·ä¸€ç‰‡è¿ç»­çš„å­˜å‚¨ç©ºé—´,å‡½æ•°å®šä¹‰åœ¨stdlib.hä¸­ 	L.length = 0;
 //	L.MaxSize = InitSize;
 //}
 
-//Ôö¼ÓË³Ğò±íµÄ³¤¶È
-void IncreaseSize(SqList& L, int len)
-{//ÒªÔö¼ÓµÄË³Ğò±í, Ôö¼ÓµÄ³¤¶È
-	int* p = L.data;
-	L.data = (int*)malloc((L.MaxSize + len) * sizeof(int));
-	for (int i = 0; i < L.length; i++)
-	{
-		L.data[i] = p[i];
-	}
-	L.MaxSize = L.MaxSize + len;
-	free(p);//ÊÍ·ÅpÕ¼ÓÃµÄÄÚ´æ¿Õ¼ä
+//å¢åŠ é¡ºåºè¡¨çš„é•¿åº¦
+void IncreaseSize(SqList& L, int len) {  //è¦å¢åŠ çš„é¡ºåºè¡¨, å¢åŠ çš„é•¿åº¦
+    int* p = L.data;
+    L.data = (int*)malloc((L.MaxSize + len) * sizeof(int));
+    for (int i = 0; i < L.length; i++) {
+        L.data[i] = p[i];
+    }
+    L.MaxSize = L.MaxSize + len;
+    free(p);  //é‡Šæ”¾på ç”¨çš„å†…å­˜ç©ºé—´
 }
