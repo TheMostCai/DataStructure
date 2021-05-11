@@ -1,12 +1,12 @@
 //#include <iostream>
 //
-//using namespace std;
+// using namespace std;
 //
-//int main(){
+// int main(){
 //	char buf[20];
 //
-//	cin.ignore(7);//ºöÂÔ7¸ö×Ö·û
-//	cin.getline(buf, 10);//¶ÁÈ¡Ò»ĞĞÖĞµÄ10-1¸ö×Ö·ûµ½bufÖĞ(×îºóÒ»Î»Òª´æ´¢\0)
+//	cin.ignore(7);//å¿½ç•¥7ä¸ªå­—ç¬¦
+//	cin.getline(buf, 10);//è¯»å–ä¸€è¡Œä¸­çš„10-1ä¸ªå­—ç¬¦åˆ°bufä¸­(æœ€åä¸€ä½è¦å­˜å‚¨\0)
 //	cout << buf << endl;
 //
 //	return 0;

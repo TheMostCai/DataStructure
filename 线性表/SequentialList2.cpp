@@ -13,11 +13,12 @@ typedef struct {
 } SqList;
 
 // 初始化顺序表
-// void InitList(SqList &L){
-//	L.data = (int *)malloc(InitSize *
-// sizeof(int));//申请一片连续的存储空间,函数定义在stdlib.h中 	L.length = 0;
-//	L.MaxSize = InitSize;
-//}
+void InitList(SqList& L) {
+    //申请一片连续的存储空间,函数定义在stdlib.h中
+    L.data = (int*)malloc(InitSize * sizeof(int));
+    // L.length = 0;
+    L.MaxSize = InitSize;
+}
 
 //增加顺序表的长度
 void IncreaseSize(SqList& L, int len) {  //要增加的顺序表, 增加的长度

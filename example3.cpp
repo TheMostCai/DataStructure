@@ -1,18 +1,19 @@
 //#include <iostream>
 //
-//using namespace std;
+// using namespace std;
 //
-//int main(){
+// int main(){
 //	const int SIZE = 50;
 //	char buf[SIZE];
 //
-//	cout << "ÇëÊäÈëÒ»¶ÎÎÄ±¾:";
-//	cin.read(buf, 20);//¶ÁÈ¡20¸ö×Ö·ûµ½buf
+//	cout << "è¯·è¾“å…¥ä¸€æ®µæ–‡æœ¬:";
+//	cin.read(buf, 20);//è¯»å–20ä¸ªå­—ç¬¦åˆ°buf
 //
-//	cout << "×Ö·û´®ÊÕ¼¯µ½µÄ×Ö·ûÊýÎª: " << cin.gcount() << endl;//cin.gcount()¼ÆËãÌáÈ¡µ½µÄ×Ö·ûÊý
+//	cout << "å­—ç¬¦ä¸²æ”¶é›†åˆ°çš„å­—ç¬¦æ•°ä¸º: " << cin.gcount() <<
+//endl;//cin.gcount()è®¡ç®—æå–åˆ°çš„å­—ç¬¦æ•°
 //
-//	cout << "ÊäÈëµÄÎÄ±¾ÐÅÏ¢ÊÇ: ";
-//	cout.write(buf, 20);//´ÓbufÖÐÊä³ö20¸ö×Ö·û
+//	cout << "è¾“å…¥çš„æ–‡æœ¬ä¿¡æ¯æ˜¯: ";
+//	cout.write(buf, 20);//ä»Žbufä¸­è¾“å‡º20ä¸ªå­—ç¬¦
 //	cout << endl;
 //	return 0;
 //}

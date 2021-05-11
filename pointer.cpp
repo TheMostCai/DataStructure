@@ -1,14 +1,15 @@
 //#include <iostream>
 //
-//using namespace std;
+// using namespace std;
 //
-//int main(){
+// int main(){
 //	int array[] = { 2,5,6,7,8 };
 //	int *ptr = array;
 //
-//	cout << "*ptr+1 = " << *ptr + 1;//ptrÊÇÖ¸Õë ÏÈ½âÒıÓÃ,È»ºó+1
+//	cout << "*ptr+1 = " << *ptr + 1;//ptræ˜¯æŒ‡é’ˆ å…ˆè§£å¼•ç”¨,ç„¶å+1
 //	cout << "\n";
-//	cout << "*(ptr+1) = " << *(ptr + 1) << endl;//ÏÈÈÃÖ¸Õëptr¼Ó1,ptrÖ¸ÏòµÚ¶ş¸öÊı,ÔÙ½âÒıÓÃ
+//	cout << "*(ptr+1) = " << *(ptr + 1) <<
+//endl;//å…ˆè®©æŒ‡é’ˆptråŠ 1,ptræŒ‡å‘ç¬¬äºŒä¸ªæ•°,å†è§£å¼•ç”¨
 //
 //
 //
