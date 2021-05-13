@@ -87,6 +87,8 @@ bool InsertPreviousNode(LNode* p, LinkList L, int e) {
     s->data = p->data;
     p->next = s;
     p->data = e;
+
+    return true;
 }
 
 //按位序删除(带头结点),将被删除结点的数据给e
@@ -200,4 +202,14 @@ LinkList List_HeadInsert(LinkList& L, int n) {
         L->next = p;        //头结点的后继再指向p
     }
     return L;
+}
+
+void toString(LinkList& L) {
+    LNode* p;
+    p = L;
+    while (p->next != NULL) {
+        cout << p->next->data << "\n";
+        p = p->next;
+    }
+    cout << endl;
 }

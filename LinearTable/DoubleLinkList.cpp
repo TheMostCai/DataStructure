@@ -35,6 +35,18 @@ bool DListInsert(DLinkList& L, int i, int e) {
     return true;
 }
 
+//删除双链表中位序为i的结点
+bool DListDelete(DLinkList& L, int i) {
+    DNode* p = GetElem(L, i);
+    if (p == NULL) {
+        return false;
+    }
+    p->prior->next = p->next;   // p前驱的后继指向p的后继
+    p->next->prior = p->prior;  // p后继的前驱指向p的前驱
+    free(p);                    //删除p占用的内存空间
+    return true;
+}
+
 //获取双链表D中位序为i的结点
 DNode* GetElem(DLinkList& L, int i) {
     if (i < 0) {

@@ -16,7 +16,7 @@ typedef struct {
 void InitList(SqList& L) {
     //申请一片连续的存储空间,函数定义在stdlib.h中
     L.data = (int*)malloc(InitSize * sizeof(int));
-    // L.length = 0;
+    L.length = 0;
     L.MaxSize = InitSize;
 }
 
