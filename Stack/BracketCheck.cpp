@@ -3,14 +3,15 @@
 
 using namespace std;
 
-// const int MaxSize = 20;
+const int MaxSize = 20;
 
-// typedef struct {
-//     char data[MaxSize];
-//     int top;
-// } SqStack;
+typedef struct {
+    char data[MaxSize];
+    int top;
+} SqStack;
 
-/*bool bracketCheck(char str[], int length) {
+//括号匹配算法
+bool bracketCheck(char str[], int length) {
     SqStack S;
 
     S.top = -1;  // InitStack(S);
@@ -47,43 +48,4 @@ using namespace std;
         }
     }
     return S.top == -1;
-}*/
-
-int main() {
-    // LinkList L;
-    // InitLinkList(L);
-
-    // List_TailInsert(L, 5);
-    // toString(L);
-    // int e;
-    // ListDelete(L, 3, e);
-    // toString(L);
-
-    // SqStack S;
-    // InitStack(S);
-
-    // if (isStackEmpty(S)) {
-    //     cout << "Empty\n" << endl;
-    // } else {
-    //     cout << "Not Empty\n" << endl;
-    // }
-
-    // cout << S.top << "\n";
-    // Push(S, 1);
-    // cout << S.top << "\n";
-
-    // if (isStackEmpty(S)) {
-    //     cout << "Empty\n" << endl;
-    // } else {
-    //     cout << "Not Empty\n";
-    //     cout << S.data[0] << endl;
-    // }
-
-    // char str[] = {'(', '{', '{', '(', '[', ']', ')', '}', '}', ')'};
-    // if (bracketCheck(str, 10)) {
-    //     cout << "OK" << endl;
-    // } else {
-    //     cout << "NO" << endl;
-    // }
-    return 0;
 }
