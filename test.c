@@ -1,6 +1,6 @@
 //#include <stdio.h>
 //
-//void love(int n){
+// void love(int n){
 //	int i = 0;
 //	while ( i<n )	{
 //		i++;
@@ -8,28 +8,28 @@
 //	}
 //}
 //
-//void main(){
+// void main(){
 //	love(3000);
 //}
 
 //#include <stdio.h>
 //
-//typedef struct{
+// typedef struct{
 //	char no[20];
 //}SqList;
 //
-//void InitList(SqList l){
+// void InitList(SqList l){
 //
 //}
 //
-//void test(int x){
+// void test(int x){
 //	printf("");
 //}
 //
-//int main(){
+// int main(){
 //	int x = 1;
-//	printf("µ÷ÓÃtestÇ° x = %d\n", x);
+//	printf("è°ƒç”¨testå‰ x = %d\n", x);
 //	test(x);
-//	printf("µ÷ÓÃtestºó x = %d\n", x);
+//	printf("è°ƒç”¨testå x = %d\n", x);
 //	return 0;
 //}

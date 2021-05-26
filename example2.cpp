@@ -1,12 +1,12 @@
 //#include <iostream>
 //
-//using namespace std;
+// using namespace std;
 //
-//int main(){
+// int main(){
 //	char p;
-//	cout << "ÇëÊäÈëÒ»¶ÎÎÄ±¾:\n";
+//	cout << "è¯·è¾“å…¥ä¸€æ®µæ–‡æœ¬:\n";
 //
-//	while ( cin.peek()!='\n' )	{//cin.peek()´ÓÊäÈëÁ÷ÖÐÌôÈ¡Ò»¸ö×Ö·û
+//	while ( cin.peek()!='\n' )	{//cin.peek()ä»Žè¾“å…¥æµä¸­æŒ‘å–ä¸€ä¸ªå­—ç¬¦
 //		p = cin.get();
 //		cout << p;
 //	}

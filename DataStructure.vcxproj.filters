@@ -39,5 +39,8 @@
     <ClCompile Include="线性表\SequentialList2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="car.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

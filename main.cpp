@@ -85,6 +85,9 @@ int main() {
     // } else {
     //     cout << "NO" << endl;
     // }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 线性表
     return 0;
 }

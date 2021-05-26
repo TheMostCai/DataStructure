@@ -10,13 +10,13 @@
 //
 //#include <iostream>
 //
-//using namespace std;
+// using namespace std;
 //
-//int main(){
+// int main(){
 //	int sum = 0;
 //
-//	cout << "ÇëÊäÈëÒ»´®ÕûÊýºÍÈÎÒâÊýÄ¿µÄ¿Õ¸ñ:";
-//	int i;
+//	cout <<
+//"é å›©æŸ‰ç»¶î…¢å´—éŠ‰ã‚‡î±å¨‘æ’³å¼¶é†ï½‰å¼«é‰æŒŽå«²å¨´çŠµç²¯é“ä¼´å¼«éŽµî†½çª—é–»ã„¥å«®éˆ¹æ ­å¼½é”Ÿï¿½:"; 	int i;
 //	while ( cin>>i ){
 //		sum += i;
 //		while ( cin.peek()==' ' ){
@@ -26,21 +26,21 @@
 //			break;
 //		}
 //	}
-//	cout << "½á¹ûÊÇ:" << sum << endl;
+//	cout << "ç¼‚ä½¹æŒ»éå¤å¼°é”Ÿï¿½:" << sum << endl;
 //
 //	return 0;
 //}
 
 //#include <iostream>
 //
-//using namespace std;
+// using namespace std;
 //
-//void main(){
+// void main(){
 //	int num[10];
 //
-//	cout << "ÇëÊäÈë10¸öÕûÐÍÊý¾Ý:\n";
+//	cout << "é å›©æŸ‰ç»¶î…¢å´—é”Ÿï¿½10å¨‘æ“ƒäºé†ï½‰å´¹ç€£î‚£æ®¶é–¹ç™¸æ‹·:\n";
 //	for ( int i = 0; i < 10; i++ )		{
-//		cout << "ÇëÊäÈëµÚ" << i + 1 << "¸öÊý¾Ý:";
+//		cout << "é å›©æŸ‰ç»¶î…¢å´—éŠ‰ÑŒå„‘" << i + 1 << "å¨‘æ“ƒäºé†ç†¼å¹‘é”Ÿï¿½:";
 //		cin >> num[i];
 //	}
 //
@@ -49,35 +49,35 @@
 //		total += num[i];
 //	}
 //
-//	cout << "ÊäÈëÊý×ÖµÄ×ÜºÍÊÇ:" << total;
-//	cout << "Æ½¾ùÖµÊÇ:" << (float)total / 10;
+//	cout << "é‰å ŸæŒ¸é™å—›å¼«é‰è·¨æ‘Ÿé–»ã„¥å«­éˆ§î„ƒî‡§éŽ·ä¼´å¼°é”Ÿï¿½:" << total;
+//	cout << "æ¥ ç‚²å•¿å¨¼åº¨å´éå…¼Ð¦:" << (float)total / 10;
 //}
 
 //#include <iostream>
 //#include <string>
 //
-//using namespace std;
+// using namespace std;
 //
-//int main(){
+// int main(){
 //	string str;
-//	cout << "ÇëËæ±ãÊäÈëÒ»´®×Ö·û";
+//	cout << "é å›©å…˜å¨ˆãˆ¡ç¬Ÿé‘³îˆœç¿»é–¸å¿‹å„°ç»”å­˜ç¨‰éŽ»æŽ”æ‘Ÿç¼æ¥‹æ‹·";
 //	getline(cin, str);
 //	cout << str;
 //	return 0;
-//} 
+//}
 
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-void test(int &x){
-	x = 1024;
-}
+// void test(int &x){
+// 	x = 1024;
+// }
 
-int main(){
-	int x = 1;
-	cout << x << "\n";
-	test(x);
-	cout << x << "\n";
-	return 0;
-}
+// int main(){
+// 	int x = 1;
+// 	cout << x << "\n";
+// 	test(x);
+// 	cout << x << "\n";
+// 	return 0;
+// }

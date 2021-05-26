@@ -1,5 +1,3 @@
-//括号匹配算法
-
 #include <stdlib.h>
 #include <iostream>
 
