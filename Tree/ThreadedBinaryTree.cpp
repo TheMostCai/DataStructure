@@ -36,7 +36,7 @@ void InThread(ThreadTree T, ThreadNode*& pre) {
     }
 }
 
-//中序线索化二叉树
+//中序线索化二叉树(不带头结点)
 void CreateInThread(ThreadTree T) {
     ThreadNode* pre;
     if (T != NULL) {
@@ -46,3 +46,4 @@ void CreateInThread(ThreadTree T) {
         pre->rtag = 1;
     }
 };
+
