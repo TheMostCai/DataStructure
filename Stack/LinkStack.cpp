@@ -16,6 +16,7 @@ bool InitLinkStack(LinkStack& S) {
 }
 
 //入栈
+//头插法
 bool Push(LinkStack& S, int e) {
     StackNode* p = (StackNode*)malloc(sizeof(StackNode));
     p->data = e;
