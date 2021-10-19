@@ -1,3 +1,4 @@
+#include "LinearTable/SinglyLinkList.cpp"
 #include <stdlib.h>
 #include <iostream>
 
@@ -15,7 +16,15 @@ long get(int number, int n) {
     if (isObb(number)) {
     }
 }
+
 int main() {
-    cout << "hello world" << endl;
+    LinkList list = new LNode;
+    InitLinkList(list);
+    for(int i =1;i<=10;i++){
+        ListInsert(list,i,i);
+    }
+    toString(list);
+    delete list;
+    toString(list);
     return 0;
 }
