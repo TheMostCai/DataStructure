@@ -1,4 +1,6 @@
-/*将n个整数存放到一维数组R中. 
+/*
+2010年题
+将n个整数存放到一维数组R中. 
 试设计一个在时间和空间两方面都尽可能高效的算法. 
 将R中保存的序列循环左移p(o<p<n)个位置.
 */
@@ -51,7 +53,6 @@ int reverseToMove(int R[],int p,int RLength){
 }
 
 //将数组R从下标start开始,到下标end为止逆置
-//有bug
 int reverse(int R[],int start,int end){
     for(int i=0;i<(end-start+1)/2;i++){
         int temp = R[start+i];
