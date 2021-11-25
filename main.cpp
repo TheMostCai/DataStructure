@@ -48,6 +48,7 @@ using namespace std;
     }
     return S.top == -1;
 }*/
+int sum=0;
 
 int main() {
     // LinkList L;
@@ -85,5 +86,6 @@ int main() {
     // } else {
     //     cout << "NO" << endl;
     // }
+    cout<<sum<<endl;
     return 0;
 }

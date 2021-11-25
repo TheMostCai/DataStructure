@@ -13,7 +13,7 @@
     每遍历一个结点, 判断一次是否相同, 相同的即为共同后缀 
  */
 
-//没写完
+//没有验证准确性
 #include <iostream>
 #include <stdlib.h>
 #include "../LinearTable/SinglyLinkList.cpp"
