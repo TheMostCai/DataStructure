@@ -45,11 +45,21 @@ int findRoot(Tree T, TNode A, TNode B, TNode& common) {
             p = p->rChild;
         }
     }
-    while (true) {  //找到第一个数值大于B的结点,即为AB第一个公共祖先
-        Pop(S, *p);
-        if (p->data > B.data) {
-            common = *p;
-            break;
+    if (A.data < B.data) {
+        while (true) {  //若A<B,则A在左,B在右.找到第一个数值大于B的结点
+            Pop(S, *p);
+            if (p->data > B.data) {
+                common = *p;
+                break;
+            }
+        }
+    } else {
+        while (true) {  //若A>B,则A在右子树,B在左子树,找到第一个数值小于B的结点
+            Pop(S, *p);
+            if (p->data < B.data) {
+                common = *p;
+                break;
+            }
         }
     }
 }
