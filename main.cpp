@@ -50,42 +50,32 @@ using namespace std;
 }*/
 int sum=0;
 
+typedef struct Node{
+    int data;
+    Node* next;
+}Node, *List;
+
+int printList(List L){
+    Node *p=L;
+    while(L->next!=NULL){
+        cout<<p->data<<endl;
+        p=p->next;
+    }
+    return 0;
+}
 int main() {
-    // LinkList L;
-    // InitLinkList(L);
-
-    // List_TailInsert(L, 5);
-    // toString(L);
-    // int e;
-    // ListDelete(L, 3, e);
-    // toString(L);
-
-    // SqStack S;
-    // InitStack(S);
-
-    // if (isStackEmpty(S)) {
-    //     cout << "Empty\n" << endl;
-    // } else {
-    //     cout << "Not Empty\n" << endl;
-    // }
-
-    // cout << S.top << "\n";
-    // Push(S, 1);
-    // cout << S.top << "\n";
-
-    // if (isStackEmpty(S)) {
-    //     cout << "Empty\n" << endl;
-    // } else {
-    //     cout << "Not Empty\n";
-    //     cout << S.data[0] << endl;
-    // }
-
-    // char str[] = {'(', '{', '{', '(', '[', ']', ')', '}', '}', ')'};
-    // if (bracketCheck(str, 10)) {
-    //     cout << "OK" << endl;
-    // } else {
-    //     cout << "NO" << endl;
-    // }
-    cout<<sum<<endl;
+    List L = new Node;
+    Node* last=L;
+    for (int i = 0; i < 5; i++){
+        Node* p = new Node;
+        p->data=i;
+        last->next=p;
+        last=p;
+    }
+    last->next=NULL;
+    Node* d=L->next->next->next;
+    L->next->next->next=d->next;
+    delete d;
+    printList(L);
     return 0;
 }

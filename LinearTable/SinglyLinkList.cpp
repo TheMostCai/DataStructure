@@ -11,6 +11,7 @@ typedef struct LNode {
 //初始化单链表(带头结点)
 void InitLinkList(LinkList& L) {
     L = (LNode*)malloc(sizeof(LNode));
+    LNode* p= new LNode;
     L->next = NULL;
 }
 
@@ -113,6 +114,7 @@ bool ListDelete(LinkList& L, int i, int& e) {
     }
     LNode* q = p->next;  // q为要被删除的结点
     p->next = q->next;
+    p=q->next;
     e = q->data;
     //释放被删除结点占用的内存! 这一步很重要!
     // C/C++没有内存自动回收机制!!!
